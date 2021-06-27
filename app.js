@@ -16,7 +16,7 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use('/words', dictionaryRoutes);
+app.use('/api/words', dictionaryRoutes);
 
 app.use((req, res, next) => {
     const error = new HttpError('Could not find this route.', 404);
